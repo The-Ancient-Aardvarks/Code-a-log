@@ -17,6 +17,7 @@ function App() {
           {!user && <Redirect to="/auth/sign-in" />}
         </Route>
       </Switch>
+      <img src="assets/Snippy.svg"></img>
     </div>
   );
 }

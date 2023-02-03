@@ -2,6 +2,7 @@ import { checkError, client } from './client.js';
 
 export async function getSnips() {
   const response = await client.from('snips').select();
+  console.log('response', response);
   return checkError(response);
 }
 

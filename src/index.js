@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { UserProvider } from './context/UserContext.js';
 import { BrowserRouter } from 'react-router-dom';
+import { SnipsProvider } from './context/SnipsContext.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <App />
+        <SnipsProvider>
+          <App />
+        </SnipsProvider>
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
