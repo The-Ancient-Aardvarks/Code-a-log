@@ -8,10 +8,10 @@ export default function Snips() {
     <ul>
       {snips.map((snip) => {
         return (
-          <li key={snip.id}>
+          <div key={snip.id}>
             <h3>{snip.name}</h3>
             <p>{snip.body}</p>
-          </li>
+          </div>
         );
       })}
     </ul>

@@ -10,6 +10,7 @@ const SnipsProvider = ({ children }) => {
     const fetchSnips = async () => {
       try {
         const data = await getSnips();
+        console.log('data', data);
         setSnips(data);
       } catch (e) {
         console.error(e.message);
